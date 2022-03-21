@@ -5,7 +5,7 @@ app.use(express.json());
 const userController=require('./controller/user.controller')
 const bookController=require("./controller/book.controller")
 const commentController=require("./controller/comment.controller")
-app.user("/user",userController)
+app.use("/user",userController)
 app.use("/book",bookController)
 app.use("/comment",commentController)
 app.listen(6000,async () => {
